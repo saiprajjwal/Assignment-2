@@ -2,90 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Skilled</title>
 </head>
 
 <body>
-    <div class="main-container">
-        <header class="wrapper">
-            <nav class="container">
-                <h1 class="logo">skilled</h1>
-                <a href="#" class="btn btn--nav">Get Started</a>
-            </nav>
-        </header>
+  <div class="main-container">
+    <header class="center">
+      <div class="logo">
+        <h1 class="logo__text">skilled</h1>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="" class="btn btn--nav">Get Started</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero__left">
+        <h1 class="hero__cta">Maximize skill, minimize budget</h1>
+        <h2 class="hero__sub-header">
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </h2>
+        <button class="btn btn--cta">Get Started</button>
+      </div>
+      <div class="hero__right">
+        <picture>
+          <source 
+            srcset="./img/image-hero-mobile.png"
+            media="max-width: 756px"
+          />
+          <source 
+            srcset="./img/image-hero-tablet.png"
+            media="(min-width: 756px)"
+          />
+          <img src="./img/image-hero-mobile.png" />
+        </picture>
 
-        <main class="wrapper">
-            <div class="hero container">
-                <section class="hero-left">
-                    <h1>
-                        Maximize skill, minimize budget
-                    </h1>
-                    <p>
-                        Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.
-                    </p>
-                    <a href="#" class="btn btn--banner">Get Started</a>
-                </section>
-                <section class="hero-right">
-                    <img src="/img/image-hero-desktop@2x.png" />
-                </section>
-            </div>
-            <div class="product-container container">
+      </div>
+    </section>
+    <main>
+      <div class="product-container">
+        <div class="product product--featured">
+          <h1 class="product__title">Check out our most popular courses!</h1>
+        </div>
+        <div class="product">
+          <img src="./img/icon-animation.svg" alt="" class="product__icon-image" />
+          <h1 class="product__title">Animation</h1>
+          <h2 class="product__subtitle">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience
+          </h2>
+          <button class="btn--link">Get Started</button>
+        </div>
+        <div class="product">
+          <img src="./img/icon-design.svg" alt="" class="product__icon-image" />
+          <h1 class="product__title">Design</h1>
+          <h2 class="product__subtitle">
+            Create beautiful, usable interfaces to help shape the future of
+            how the web looks. Even with no experience!
+          </h2>
+          <button class="btn--link">Get Started</button>
+        </div>
+        <div class="product">
+          <img src="./img/icon-photography.svg" alt="" class="product__icon-image" />
+          <h1 class="product__title">Photography</h1>
+          <h2 class="product__subtitle">
+            Explore critical fundamentals like lighting, composition, and
+            focus to capture exceptional photos.
+          </h2>
+          <button class="btn btn--link">Get Started</button>
+        </div>
 
-                <div class="product product--featured">
-                    <h1 class="product__title">Check out our most popular courses!</h1>
-                </div>
+        <div class="product">
+          <img src="./img/icon-crypto.svg" alt="" class="product__icon-image" />
+          <h1 class="product__title">Crypto</h1>
+          <h2 class="product__subtitle">
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </h2>
+          <button class="btn btn--link">Get Started</button>
+        </div>
+        <div class="product">
+          <img src="./img/icon-business.svg" alt="" class="product__icon-image" />
+          <h1 class="product__title">Business</h1>
+          <h2 class="product__subtitle">
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </h2>
+          <button class="btn btn--link">Get Started</button>
+        </div>
+      </div>
+    </main>
 
-                <div class="product">
-                    <img src="" alt="" class="product__logo">
-                    <h1 class="product__title">Animation</h1>
-                    <p class="product__subtitle">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
-                    <a href="" class="product__link">
-                  Get Started</a>
-                </div>
-                <div class="product">
-                    <img src="" alt="" class="product__logo">
-                    <h1 class="product__title">Design</h1>
-                    <p class="product__subtitle">Create beautiful, usable interfaces to help shape the future of how the web looks. Even with no experience!</p>
-                    <a href="" class="product__link">Get Started</a>
-                </div>
-                <div class="product">
-                    <img src="" alt="" class="product__logo">
-                    <h1 class="product__title">Photography</h1>
-                    <p class="product__subtitle">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
-                    <a href="" class="product__link">Get Started</a>
-                </div>
-                <div class="product">
-                    <img src="" alt="" class="product__logo">
-                    <h1 class="product__title">Crypto</h1>
-                    <p class="product__subtitle">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
-                    <a href="" class="product__link">Get Started</a>
-                </div>
-                <div class="product">
-                    <img src="" alt="" class="product__logo">
-                    <h1 class="product__title">Business</h1>
-                    <p class="product__subtitle">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
-                    <a href="" class="product__link">Get Started</a>
-                </div>
-
-
-            </div>
-
-
-        </main>
-        <footer class="wrapper">
-            <nav class="container">
-                <div>
-                    <h1 class="logo">skilled</h1>
-                </div>
-                <div> <a href="#" class="btn btn--footer">Get Started</a> </div>
-            </nav>
-        </footer>
+  </div>
+  <footer>
+    <div class="container">
+      <h1 class="logo__text">skilled</h1>
+      <a href="" class="btn btn--footer">Get Started</a>
     </div>
 
+  </footer>
 </body>
 
 </html>
